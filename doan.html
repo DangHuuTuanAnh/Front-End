@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Đồ án</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<script type="text/javascript" src="js/wow.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		.picture{
+			width: 100%;
+		}
+		.menutab{
+			list-style: none;
+			float: left;
+			padding-left: 15px;
+		}
+		.colorword{
+			color: white;
+		}
+		.colorword:hover{
+			color: #ff5722;
+		}
+		.parallax { 
+		  /* The image used */
+		  background-image: url("img/homebg.jpg");
+
+		  /* Set a specific height */
+		  height: 660px; 
+
+		  /* Create the parallax scrolling effect */
+		  /*background-attachment: fixed;*/
+		  background-position: center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		  filter: brightness(30%);
+		  opacity: 0.9;
+		  filter: alpha(opacity=50);
+		  position: relative;
+		}
+		.content-slide{
+			text-align: center;
+			background: #ccc0; 
+		}
+		.bgbutton{
+			background-color: #FF9800;
+    		border-color: #FF9801; 
+		}
+		.carousel-indicators li{
+			width: 10px;
+			height: 10px;
+			transform: rotate(45deg);
+			margin-left: 10px;
+		}
+		.carousel-indicators li.active{
+			background-color: #ff9800;
+		}
+		.icons{
+			font-size: 30px!important;
+			padding-bottom: 20px!important;
+			padding-top: 20px!important;
+		}
+		.icons1{
+			font-size: 30px!important;
+			text-align: center!important;
+		}
+		.tab-icons{
+			border: none;
+			text-align: center;
+		}
+		.height-progress{
+			height: 2px;
+    		width: 200px;
+		}
+		.text{
+			padding-top: 50px;
+		}
+		.left{
+			margin-top: 40px;
+		}
+		.right{
+			margin-top: 20px;
+		}
+		.video{
+			position: relative;
+		}
+		.bgvideo{
+			position: absolute;
+		}
+		.content-video{
+			text-align: center;
+			position: absolute;
+			left: 125px;
+    		top: 130px;
+		}
+		.percentage{
+			height: 0.5rem;
+			/*background-color:#ff9800; */
+		}
+		.colorpercent{
+			background-color: #ff9800;
+		}
+		.small-tab{
+			text-align: center;
+			border: none;
+		}
+		.all-counter{
+			position: relative;
+		}
+		.bgpicture{
+			position: relative;
+		}
+		.content-counter{
+			text-align: center;
+    		margin: 0 auto;
+			position: absolute;
+			left: 125px;
+    		top: 130px;
+		}
+		.content{
+			/*text-align: center;*/
+			margin-top: 20px;
+		}
+		.card{
+			border: none;
+		}
+		body {
+		    margin-top: 1rem;
+		}
+		img {
+		  max-width: 100%;
+		}
+		.filtr-item {
+		    padding: 1rem;
+		}
+		.item-desc {
+		    background-color: rgba(0,0,0,0.5);
+		    color: white;
+		    position: absolute;
+		    text-transform: uppercase;
+		    text-align: center;
+		    padding: 1rem;
+		    z-index: 1;
+		    bottom: 1rem;
+		    left: 1rem;
+		    right: 1rem;
+		}
+
+		/* Filter controls */
+		.simplefilter, .multifilter, .sortandshuffle, .search-row {
+		  padding-left: 0;
+		}
+		.simplefilter li, .multifilter li, .sortandshuffle li {
+		    color: white;
+		    cursor: pointer;
+		    display: inline-block;
+		    text-transform: uppercase;
+		    padding: 1rem 2rem;
+		}
+		.simplefilter li {
+		    /*background-color: #585858;*/
+		    color: black;
+		}
+		.simplefilter li.active {
+		    /*background-color: #212121;*/
+		    color: #ff5722;
+		}
+		.multifilter li {
+		    background-color: #4b9eff;
+		}
+		.multifilter li.active {
+		    background-color: #2265b4;
+		}
+
+		/* Shuffle and sort controls */
+		select {
+		    padding: 1rem 1rem;
+		    text-transform: uppercase;
+		}
+		.sortandshuffle .shuffle-btn {
+		    background-color: #dec800;
+		}
+		.sortandshuffle .sort-btn {
+		    background-color: #de0000;
+		}
+		.sortandshuffle .sort-btn.active {
+		    background-color: #9d0000;
+		}
+
+		/* Search control */
+		.filtr-search {
+		    padding: 0.5rem;
+		    text-transform: uppercase;
+		}
+
+		/* Colored divs */
+		.block {
+		  box-shadow: 0 1px 4px rgba(0,0,0,.75) inset;
+		  color: white;
+		  text-align: center;
+		  height: 80px;
+		  position: relative;
+		}
+		.block > .text {
+		  display: inline-block;
+		  font-size: 24px;
+		  font-weight: bold;
+		  position: absolute;
+		  left: 50%;
+		  top: 50%;
+		  transform: translate(-50%, -50%);
+		}
+		.block.xs {
+		  height: 40px;
+		}
+		.block.md {
+		  height: 120px;
+		}
+		.block.lg {
+		  height: 160px;
+		}
+		.block.purple {
+		  background-color: purple;
+		}
+		.block.yellow {
+		  background-color: #dec800;
+		}
+		.block.red {
+		  background-color: crimson;
+		}
+		.block.green {
+		  background-color: lightgreen;
+		}
+		.block.blue {
+		  background-color: #4b9eff;
+		}
+
+		/* Helpers */
+		.push-down {
+		  margin-bottom: 50px;
+		}
+
+		.filtr-container,
+		.color-container-1,
+		.color-container-2,
+		.color-container-3,
+		.color-container-4 {
+		  transition: height 500ms ease-out;
+		}
+		.footer{
+			background: #2b2525;
+		}
+		.colorft{
+			color: white;
+		}
+		.aboutlg{
+			text-align: center;
+		}
+		#backtotop{
+			border-radius: 100px;
+		    position: fixed;
+		    bottom: 20px;
+		    right: 25px;
+		    background: #02020285;
+		    width: 29px;
+		    height: 29px;
+		}
+		.iconbtt{
+			color: #9E9E9E;
+    		text-align: center;
+		}
+		.bgsearch{
+			background-color: #2b2525!important;
+		}
+		.therservice{
+			margin-left: 15px;
+		}
+		.logo{
+			background: #ccc;
+		}
+		.header{
+			position: relative;
+		}
+		.child-header{
+			position: absolute;
+		}
+		.fixed-top{
+	      background-color: #343a402b!important;
+	    }
+
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="container-fluid">
+			 
+		</div>
+	</div>
+	<div class="container-fluid parallax">
+		<div class="container-fluid">
+				<div class="container child-header">
+					<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+					  <ol class="carousel-indicators">
+					    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+					    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+					  </ol>
+					  <div class="carousel-inner">
+					    <div class="carousel-item active">
+					      	<div class="jumbotron content-slide">
+							  <h1 class="display-4 colorword">WELCOME TO OUT LOGIC</h1>
+							  <p class="colorword">We Make Awesome Theme For Your Business</p>
+							  <a class="btn btn-primary btn-lg bgbutton" href="#" role="button">LEARN MORE</a>
+							</div>
+					    </div>
+					    <div class="carousel-item">
+					      	<div class="jumbotron content-slide">
+							  <h1 class="display-4 colorword">WELCOME TO OUT LOGIC</h1>
+							  <p class="colorword">We Make Awesome Theme For Your Business</p>
+							  <a class="btn btn-primary btn-lg bgbutton" href="#" role="button">LEARN MORE</a>
+							</div>
+					    </div>
+					    <div class="carousel-item">
+					      	<div class="jumbotron content-slide">
+							  <h1 class="display-4 colorword">WELCOME TO OUT LOGIC</h1>
+							  <p class="colorword">We Make Awesome Theme For Your Business</p>
+							  <a class="btn btn-primary btn-lg bgbutton" href="#" role="button">LEARN MORE</a>
+							</div>
+					    </div>
+					  </div>
+					</div>
+				</div>
+			</div>
+	</div>
+	<div class="header">
+		<div class="container">
+			<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+			    <div class="mr-auto p-2 bd-highlight fonts">
+			        <img class="picture" src="img/logo.png">
+			    </div>
+			    <div class="p-2 bd-highlight">
+			        <ul>
+			            <li class="menutab colorword">HOME</li>
+			            <li class="menutab colorword">SERVICES</li>
+			            <li class="menutab colorword">TEAMS</li>
+			            <li class="menutab colorword">WORKS</li>
+			            <li class="menutab colorword">TESTIMONIAL</li>
+			            <li class="menutab colorword">CONTACT</li>
+			        </ul>
+			    </div>
+			    <div class="p-2 bd-highlight botton1">
+			        <span class="fa fa-search"></span>
+			    </div>
+			</nav>
+			
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="card tab-icons col-lg-3 col-md-6 col-sm-12">
+					<img class="card-img picture" src="img/stabmenubg.png">
+					<div class="card-img-overlay">
+						<span class="fa fa-map-marker icons"></span>
+						<p class="card-text">WEB DESIGN</p>
+					</div>
+				</div>
+				<div class="card tab-icons col-lg-3 col-md-6 col-sm-12">
+					<img class="card-img picture" src="img/stabmenubg.png">
+					<div class="card-img-overlay">
+						<span class="fa fa-map-marker icons"></span>
+						<p class="card-text">APP DESIGN</p>
+					</div>
+				</div>
+				<div class="card tab-icons col-lg-3 col-md-6 col-sm-12">
+					<img class="card-img picture" src="img/stabmenubg.png">
+					<div class="card-img-overlay">
+						<span class="fa fa-map-marker icons"></span>
+						<p class="card-text">GRAPHIC DESIGN</p>
+					</div>
+				</div>
+				<div class="card tab-icons col-lg-3 col-md-6 col-sm-12">
+					<img class="card-img picture" src="img/stabmenubg.png">
+					<div class="card-img-overlay">
+					<span class="fa fa-map-marker icons"></span>
+						<p class="card-text">GAME DESIGN</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="left col-lg-7 col-md-7 col-sm-12">
+					<div class="row">
+						<div class="title col-lg-5 col-md-5 col-sm-5">
+							<h4>WEB DESIGN ONE</h4>
+							<div class="progress height-progress">
+							  	<div class="progress-bar bg-warning " role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+					    <div class="text">
+					    	<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum'</p>
+					    </div>
+					    <div>
+					        <a href="#" class="btn btn-primary bgbutton">LEARN MORE</a>
+					    </div>
+					</div>
+				</div>
+				<div class="right col-lg-5 col-md-5 col-sm-12">
+					<img class="picture" src="img/stab1.png">
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="container">
+			<div class="row">
+ 				<div class="title col-lg-5 col-md-5 col-sm-5">
+					<h4>FEATURED WORK</h4>
+					<div class="progress height-progress">
+						<div class="progress-bar bg-warning " role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="left col-lg-6 col-md-12 col-sm-12">
+					<!-- <div class="col-lg-6 col-md-12 col-sm-12"> -->
+						<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+						  <ol class="carousel-indicators">
+						    <li data-target="#carouselExampleIndicators " data-slide-to="0" class="active"></li>
+						    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+						    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+						  </ol>
+						  <div class="carousel-inner">
+						    <div class="carousel-item active">
+						      <img src="img/pf6.jpg" class="d-block w-100" alt="...">
+						    </div>
+						    <div class="carousel-item">
+						      <img src="img/pf6.jpg" class="d-block w-100" alt="...">
+						    </div>
+						    <div class="carousel-item">
+						      <img src="img/pf6.jpg" class="d-block w-100" alt="...">
+						    </div>
+						  </div>
+						</div>
+					<!-- </div> -->
+				</div>
+				<div class="right col-lg-6 col-md-12 col-sm-12">
+					<div class="card right">
+				      <div class="card-body">
+				        <h5 class="card-title">HAND WITH A WATCH</h5>
+				        <br>
+				        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</p>
+				        <br>
+				        <p>Client: Dadit Lorm</p>
+				        <p>Deivered: Sunday, 15 August, 2015</p>
+				        <p>Tags: Hand, Watch, Black, Tree</p>
+				        <br>
+				        <button type="button" class="btn btn-outline-secondary">LAUNCH NOW</button>
+				      </div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <div class="container-fluid video"> -->
+	<div class="video">
+		<!-- <div class="bgvideo"> -->
+			<img class="picture" src="img/videobg.jpg">
+		<!-- </div> -->
+		<div class="container content-video">
+			<div>
+				<img src="img/play.png">
+			</div>
+			<br>
+			<div>
+				<h3 class="colorword">WATCH OUR INTRO</h3>
+			</div>
+		</div>
+	</div>	
+		
+	<!-- </div> -->
+	<div class="container-fluid">
+		<div class="container">
+			<div class="row">
+ 				<div class="title col-lg-5 col-md-5 col-sm-5">
+					<h4>ABOUT LOGIC</h4>
+					<div class="progress height-progress">
+						<div class="progress-bar bg-warning " role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="left col-lg-7 col-md-12 col-sm-12">
+					<!-- <div class="row">
+						<div class="title col-lg-5 col-md-5 col-sm-5">
+							<h4>ABOUT LOGIC</h4>
+							<div class="progress height-progress">
+							  	<div class="progress-bar bg-warning " role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+					</div> -->
+					<div class="row">
+						<div class="row content col-lg-12 col-md-12 col-sm-12">
+							<div class="card col-lg-2 aboutlg">
+								<img class="card-img" src="img/iconbg2.png" >
+								<div class="card-img-overlay">
+									<span class="fa fa-coffee icons1"></span>
+								</div>
+							</div>
+							<div class="col-lg-10 col-md-6 col-sm-12">
+								<h4>RESPONSIVE DESIGN</h4>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+							</div>
+						</div>
+						<div class="row content col-lg-12 col-md-12 col-sm-12">
+							<div class="card col-lg-2 aboutlg">
+								<img class="card-img" src="img/iconbg2.png" >
+								<div class="card-img-overlay">
+									<span class="fa fa-paint-brush icons1"></span>
+								</div>
+							</div>
+							<div class="col-lg-10 col-md-6 col-sm-12">
+								<h4>EASY TO CUSTOMIZE</h4>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+							</div>
+						</div>
+						<div class="row content col-lg-12 col-md-12 col-sm-12">
+							<div class="card col-lg-2 aboutlg">
+								<img class="card-img" src="img/iconbg2.png" >
+								<div class="card-img-overlay">
+									<span class="fa fa-headphones icons1"></span>
+								</div>
+							</div>
+							<div class="col-lg-10 col-md-6 col-sm-12">
+								<h4>LIFE TIME SUPPORT</h4>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="right col-lg-5 col-md-12 col-sm-12">
+					<img class="picture" src="img/abright.png">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="left col-lg-6 col-md-12 col-sm-12">
+					<div class="row">
+						<div class="card small-tab col-lg-4 col-md-4 col-sm-4">
+							<img class="card-img picture" src="img/skmenubg.png">
+							<div class="card-img-overlay">
+								<p class="card-text">OUR MISSION</p>
+							</div>	
+						</div>
+						<div class="card small-tab col-lg-4 col-md-4 col-sm-4">
+							<img class="card-img picture" src="img/skmenubg.png">
+							<div class="card-img-overlay">
+								<p class="card-text">OUR GOAL</p>
+							</div>	
+						</div>
+						<div class="card small-tab col-lg-4 col-md-4 col-sm-4">
+							<img class="card-img picture" src="img/skmenubg.png">
+							<div class="card-img-overlay">
+								<p class="card-text">ACHIVEMENTS</p>
+							</div>	
+						</div>
+					</div>
+					<br>
+					<div class="row col-lg-12 col-md-12 col-sm-12"">
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley type a scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+					</div>
+					
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-12">
+							<span class="fa fa-check-square">We just want to love our client</span>
+							<!-- <span class="fa fa-check-square">We just want to love our client</span> -->
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12">
+							<span class="fa fa-check-square">We just want to love our client</span>
+							<!-- <span class="fa fa-check-square">We just want to love our client</span> -->
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12">
+							<span class="fa fa-check-square">We just want to love our client</span>
+							<!-- <span class="fa fa-check-square">We just want to love our client</span> -->
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12">
+							<span class="fa fa-check-square">We just want to love our client</span>
+							<!-- <span class="fa fa-check-square">We just want to love our client</span> -->
+						</div>
+						
+						<!-- <div class="col-lg-6 col-md-6 col-sm-12">
+							<span class="fa fa-check-square">We just want to love our client</span>
+							<span class="fa fa-check-square">We just want to love our client</span>
+						</div> -->
+					</div>
+				</div>
+				<div class="right col-lg-6 col-md-12 col-sm-12">
+					<!-- <div class="percentage"> -->
+						<div class="row">
+							<div class="mr-auto p-2 bd-highlight">
+								<p>PHOTOSHOP</p>
+							</div>
+							<div class="p-2 bd-highlight">
+								<p>79%</p>
+							</div>	
+						</div>
+						<div class="progress percentage">
+							<div class="progress-bar wow fadeInLeft colorpercent" data-wow-duration= '7s' role="progressbar" style="width: 79%" aria-valuenow="79" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<div class="row">
+							<div class="mr-auto p-2 bd-highlight">
+								<p>HTML/CSS</p>
+							</div>
+							<div class="p-2 bd-highlight">
+								<p>90%</p>
+							</div>		
+						</div>
+						<div class="progress percentage">
+							<div class="progress-bar wow fadeInLeft colorpercent" data-wow-duration= '7s' role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<div class="row">
+							<div class="mr-auto p-2 bd-highlight">
+								<p>JAVASCRIPT</p>
+							</div>
+							<div class="p-2 bd-highlight">
+								<p>69%</p>
+							</div>		
+						</div>
+						<div class="progress percentage">
+							<div class="progress-bar wow fadeInLeft colorpercent" data-wow-duration= '7s' role="progressbar" style="width: 69%" aria-valuenow="69" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<div class="row">
+							<div class="mr-auto p-2 bd-highlight">
+								<p>WORKPRESS</p>
+							</div>
+							<div class="p-2 bd-highlight">
+								<p>92%</p>
+							</div>		
+						</div>
+						<div class="progress percentage">
+							<div class="progress-bar wow fadeInLeft colorpercent" data-wow-duration= '7s' role="progressbar" style="width: 92%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					<!-- </div> -->
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- 	<div class="container-fluid all-counter"> -->
+
+		<div class="bgpicture">
+			<img class="picture" src="img/counterbg.jpg">
+			<div class="container content-counter">
+				<div class="row A">
+					<div class="content col-lg-3 col-md-6 col-sm-12">
+						<h1 class="counter colorword">561</h1>
+						<br>
+						<p class="colorword">CREATIVE DESIGN</p>
+					</div>
+					<div class="content col-lg-3 col-md-6 col-sm-12">
+						<h1 class="counter colorword">25</h1>
+						<br>
+						<p class="colorword">AWARDS WON</p>
+					</div>
+					<div class="content col-lg-3 col-md-6 col-sm-12">
+						<h1 class="counter colorword">236</h1>
+						<br>
+						<p class="colorword">HAPPY CLIENTS</p>
+					</div>
+					<div class="content col-lg-3 col-md-6 col-sm-12">
+						<h1 class="counter colorword">365</h1>
+						<br>
+						<p class="colorword">CUP OF COFFEE</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+
+	<!-- </div> -->
+	<div style="clear:both"></div>
+	<div class="container-fluid">
+		<div class="container">
+			<div class="row">
+ 				<div class="title col-lg-5 col-md-5 col-sm-5">
+					<h4>THER SERVICES</h4>
+					<div class="progress height-progress">
+						<div class="progress-bar bg-warning " role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+			</div>
+			<div class="row content col-lg-12 col-md-12 col-sm-12">
+				<div class="row therservice col-lg-4 col-md-6 col-sm-12">
+					<div class="row">
+						<div class="card">
+							<img class="card-img" src="img/info_iconbg.png" >
+							<div class="card-img-overlay">
+								<span class="fa fa-clock-o"></span>
+							</div>
+						</div>
+						<div>
+							<h4>CREATIVE DESIGN</h4>
+						</div>
+					</div>
+					<div>
+						<p>CREATIVE DESIGNLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+					</div>
+				</div>
+				<div class="row therservice col-lg-4 col-md-6 col-sm-12"">
+					<div class="row">
+						<div class="card">
+							<img class="card-img" src="img/info_iconbg.png" >
+							<div class="card-img-overlay">
+								<span class="fa fa-picture-o"></span>
+							</div>
+						</div>
+						<div>
+							<h4>CREATIVE DESIGN</h4>
+						</div>
+					</div>
+					<div>
+						<p>CREATIVE DESIGNLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+					</div>
+				</div>
+				<div class="row therservice col-lg-4 col-md-6 col-sm-12"">
+					<div class="row">
+						<div class="card">
+							<img class="card-img" src="img/info_iconbg.png" >
+							<div class="card-img-overlay">
+								<span class="fa fa-television"></span>
+							</div>
+						</div>
+						<div>
+							<h4>CREATIVE DESIGN</h4>
+						</div>
+					</div>
+					<div>
+						<p>CREATIVE DESIGNLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+					</div>
+				</div>
+				<div class="row therservice col-lg-4 col-md-6 col-sm-12"">
+					<div class="row">
+						<div class="card">
+							<img class="card-img" src="img/info_iconbg.png" >
+							<div class="card-img-overlay">
+								<span class="fa fa-object-group"></span>
+							</div>
+						</div>
+						<div>
+							<h4>CREATIVE DESIGN</h4>
+						</div>
+					</div>
+					<div>
+						<p>CREATIVE DESIGNLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+					</div>
+				</div>
+				<div class="row therservice col-lg-4 col-md-6 col-sm-12"">
+					<div class="row">
+						<div class="card">
+							<img class="card-img" src="img/info_iconbg.png" >
+							<div class="card-img-overlay">
+								<span class="fa fa-object-group"></span>
+							</div>
+						</div>
+						<div>
+							<h4>CREATIVE DESIGN</h4>
+						</div>
+					</div>
+					<div>
+						<p>CREATIVE DESIGNLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+					</div>
+				</div>
+				<div class="row therservice col-lg-4 col-md-6 col-sm-12"">
+					<div class="row">
+						<div class="card">
+							<img class="card-img" src="img/info_iconbg.png" >
+							<div class="card-img-overlay">
+								<span class="fa fa-object-group"></span>
+							</div>
+						</div>
+						<div>
+							<h4>CREATIVE DESIGN</h4>
+						</div>
+					</div>
+					<div>
+						<p>CREATIVE DESIGNLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="container">
+			<div class="row">
+ 				<div class="title col-lg-5 col-md-5 col-sm-5">
+					<h4>THER SERVICES</h4>
+					<div class="progress height-progress">
+						<div class="progress-bar bg-warning " role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+			</div>
+			<div class="row content">
+				<div class="col-lg-3 col-md-6 col-sm-12">
+					<img class="picture" src="img/team1.jpg">
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12">
+					<img class="picture" src="img/team2.jpg">
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12">
+					<img class="picture" src="img/team3.jpg">
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12">
+					<img class="picture" src="img/team4.jpg">
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="title col-lg-5 col-md-5 col-sm-5">
+				<h4>WHY CHOOSE US</h4>
+					<div class="progress height-progress">
+						<div class="progress-bar bg-warning " role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<!-- <div class="row">
+						<div class="title col-lg-5 col-md-5 col-sm-5">
+							<h4>WHY CHOOSE US</h4>
+							<div class="progress height-progress">
+							  	<div class="progress-bar bg-warning " role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+					</div> -->
+					<div class="row content">
+						<div class="accordion" id="accordionExample">
+						  <div class="card col-lg-12 col-md-12 col-sm-12">
+						    <div class="card-header" id="headingOne">
+						      <h2 class="mb-0">
+						        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						          CREATE DESIGN
+						        </button>
+						      </h2>
+						    </div>
+
+						    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+						      <div class="card-body">
+						        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						      </div>
+						    </div>
+						  </div>
+						  <div class="card col-lg-12 col-md-12 col-sm-12">
+						    <div class="card-header" id="headingTwo">
+						      <h2 class="mb-0">
+						        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						          RESPONSIVE DESIGN
+						        </button>
+						      </h2>
+						    </div>
+						    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+						      <div class="card-body">
+						       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						      </div>
+						    </div>
+						  </div>
+						  <div class="card col-lg-12 col-md-12 col-sm-12">
+						    <div class="card-header" id="headingThree">
+						      <h2 class="mb-0">
+						        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						          RATINA READY
+						        </button>
+						      </h2>
+						    </div>
+						    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+						      <div class="card-body">
+						       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						      </div>
+						    </div>
+						  </div>
+						   <div class="card col-lg-12 col-md-12 col-sm-12">
+						    <div class="card-header" id="headingThree">
+						      <h2 class="mb-0">
+						        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						          FREE GOOGLE FONT
+						        </button>
+						      </h2>
+						    </div>
+						    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+						      <div class="card-body">
+						       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						      </div>
+						    </div>
+						  </div>
+						   <div class="card col-lg-12 col-md-12 col-sm-12">
+						    <div class="card-header" id="headingThree">
+						      <h2 class="mb-0">
+						        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						          1170 PX GRID BASE
+						        </button>
+						      </h2>
+						    </div>
+						    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+						      <div class="card-body">
+						       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<img class="picture" src="img/choose.png">
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<div class="container-fluid ">
+		<div class="container">
+			<div class="row">
+				<div class="mr-auto p-2 bd-highlight col-lg-4 col-md-4 col-sm-4">
+					<div class="title">
+						<h4>LATEST PROJECT</h4>
+						<div class="progress height-progress">
+							<div class="progress-bar bg-warning " role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+				</div>
+				<div class="p-2 bd-highlight col-lg-8 col-md-8 col-sm-8">
+					<ul class="simplefilter">
+						<li class="fltr-controls active" data-filter="all">SHOW ALL</li>
+				        <li class="fltr-controls" data-filter="1">PHOTOGRAPHY</li>
+				        <li class="fltr-controls" data-filter="2">BRANDING</li>
+				        <li class="fltr-controls" data-filter="3">GRAPHIC DESIGN</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row push-down">
+		        <!-- <div class="filtr-container" style="height:100px !important;">
+		          <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1" data-sort="Busy streets">
+		            <img class="img-responsive" src="img/pf1.jpg" alt="sample image">
+		          </div>
+		          <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="3" data-sort="Luminous night">
+		            <img class="img-responsive" src="img/pf2.jpg" alt="sample image">
+		          </div>
+		          <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1" data-sort="City wonders">
+		            <img class="img-responsive" src="img/pf3.jpg" alt="sample image">
+		          </div>
+		          <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1" data-sort="In production">
+		            <img class="img-responsive" src="img/pf4.jpg" alt="sample image">
+		          </div>
+		          <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="3" data-sort="Industrial site">
+		            <img class="img-responsive" src="img/pf8.jpg" alt="sample image">
+		          </div>
+		          <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1" data-sort="Peaceful lake">
+		            <img class="img-responsive" src="img/pf9.jpg" alt="sample image">
+		          </div>
+		          <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2" data-sort="City lights">
+		            <img class="img-responsive" src="img/pf5.jpg" alt="sample image">
+		          </div>
+		          <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2" data-sort="Dreamhouse">
+		            <img class="img-responsive" src="img/pf6.jpg" alt="sample image">
+		          </div>
+		          <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2" data-sort="Dreamhouse">
+		            <img class="img-responsive" src="img/pf6.jpg" alt="sample image">
+		          </div>
+		          
+		          <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="3" data-sort="Restless machines">
+		            <img class="img-responsive" src="img/pf7.jpg" alt="sample image">
+		          </div>
+		          <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="3" data-sort="Restless machines">
+		            <img class="img-responsive" src="img/pf7.jpg" alt="sample image">
+		          </div>
+		           <div style="clear:both"></div>
+		        </div> -->
+		       
+      		</div>
+			  <div class="row push-down">
+        <div class="filtr-container">
+          
+          <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2, 5" data-sort="Luminous night">
+            <img class="img-responsive" src="img/pf2.jpg" alt="sample image">
+            <!-- <span class="item-desc">Luminous night</span> -->
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1, 4" data-sort="City wonders">
+            <img class="img-responsive" src="img/pf7.jpg" alt="sample image">
+            <!-- <span class="item-desc">city wonders</span> -->
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="3" data-sort="In production">
+            <img class="img-responsive" src="img/pf3.jpg" alt="sample image">
+            <!-- <span class="item-desc">in production</span> -->
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="3, 4" data-sort="Industrial site">
+            <img class="img-responsive" src="img/pf1.jpg" alt="sample image">
+            <!-- <span class="item-desc">industrial site</span> -->
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2, 4" data-sort="Peaceful lake">
+            <img class="img-responsive" src="img/pf7.jpg" alt="sample image">
+            <!-- <span class="item-desc">peaceful lake</span> -->
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1, 5" data-sort="City lights">
+            <img class="img-responsive" src="img/pf7.jpg" alt="sample image">
+            <!-- <span class="item-desc">city lights</span> -->
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2, 4" data-sort="Dreamhouse">
+            <img class="img-responsive" src="img/pf2.jpg" alt="sample image">
+            <!-- <span class="item-desc">dreamhouse</span> -->
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="3" data-sort="Restless machines">
+            <img class="img-responsive" src="img/industrial_3.jpg" alt="sample image">
+            <!-- <span class="item-desc">restless machines</span> -->
+          </div>
+        </div>
+      </div>
+		</div>
+		
+	</div>
+	<div class="container-fluid logo">
+		<div class="container">
+			<div class="row">
+				<div class=" col-lg-2 col-md-4 col-sm-6">
+					<img class="picture" src="img/clogo1.png"> 
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<img class="picture" src="img/clogo2.png"> 
+				</div>
+				<div class=" col-lg-2 col-md-4 col-sm-6">
+					<img class="picture" src="img/clogo3.png"> 
+				</div>
+				<div class=" col-lg-2 col-md-4 col-sm-6">
+					<img class="picture" src="img/clogo4.png"> 
+				</div>
+				<div class=" col-lg-2 col-md-4 col-sm-6">
+					<img class="picture" src="img/clogo5.png"> 
+				</div>
+				<div class=" col-lg-2 col-md-4 col-sm-6">
+					<img class="picture" src="img/clogo9.png"> 
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="container">
+			<!-- <div class="row">
+				<div class="title col-lg-6 col-md-6 col-sm-6">
+					<h4>CONTACT INFO</h4>
+					<div class="progress height-progress">
+						<div class="progress-bar bg-warning " role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+				<div class="title col-lg-6 col-md-6 col-sm-6">
+					<h4>LEAVE MESSAGE</h4>
+					<div class="progress height-progress">
+						<div class="progress-bar bg-warning " role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+			</div> -->
+			<div class="row">
+				<div class="left col-lg-6 col-md-6 col-sm-12">
+					<div class="row">
+						<div class="title col-lg-5 col-md-5 col-sm-5">
+							<h4>CONTACT INFO</h4>
+							<div class="progress height-progress">
+							  	<div class="progress-bar bg-warning " role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="card icons col-lg-2 col-md-2 col-sm-2">
+							<img class="card-img" src="img/iconbg2.png" >
+							<div class="card-img-overlay">
+								<span class="fa fa-coffee"></span>
+							</div>
+						</div>
+						<div class="col-lg-10 col-md-10 col-sm-10">
+							<h4>VISIT US</h4>
+							<p>20, 2 Elizabeth ST, Melbourne, Victoria 3000</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="card icons col-lg-2 col-md-2 col-sm-2">
+							<img class="card-img" src="img/iconbg2.png" >
+							<div class="card-img-overlay">
+								<span class="fa fa-coffee"></span>
+							</div>
+						</div>
+						<div class="col-lg-10 col-md-10 col-sm-10">
+							<h4>MAIL US</h4>
+							<p>support@yourmail.com</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="card icons col-lg-2 col-md-2 col-sm-2">
+							<img class="card-img" src="img/iconbg2.png" >
+							<div class="card-img-overlay">
+								<span class="fa fa-coffee"></span>
+							</div>
+						</div>
+						<div class="col-lg-10 col-md-10 col-sm-10">
+							<h4>CALL US</h4>
+							<p>+(100) 123 4567 890</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="card icons col-lg-2 col-md-2 col-sm-2">
+							<img class="card-img" src="img/iconbg2.png" >
+							<div class="card-img-overlay">
+								<span class="fa fa-coffee"></span>
+							</div>
+						</div>
+						<div class="col-lg-10 col-md-10 col-sm-10">
+							<h4>WORK HOUR</h4>
+							<p>Mon - Sat: 08 Am - 17 Pm</p>
+						</div>
+					</div>
+					
+				</div>
+				<div class="right col-lg-6 col-md-6 col-sm-12">
+					<div class="row">
+						<div class="title col-lg-5 col-md-5 col-sm-5">
+							<h4>LEAVE MESSAGE</h4>
+							<div class="progress height-progress">
+							  	<div class="progress-bar bg-warning " role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+					</div>
+					<form>
+					  <div class="row">
+					    <div class="col-lg-6 col-md-6 col-sm-12">
+					      <input type="text" class="form-control" placeholder="First name">
+					    </div>
+					    <div class="col-lg-6 col-md-6 col-sm-12">
+					      <input type="text" class="form-control" placeholder="Last name">
+					    </div>
+					    <div class="col-lg-6 col-md-6 col-sm-12">
+					      <input type="email" class="form-control" placeholder="Email">
+					    </div>
+					     <div class="col-lg-6 col-md-6 col-sm-12">
+					      <input type="text" class="form-control" placeholder="Subject">
+					    </div>
+						<div class="col-lg-12 col-md-12 col-sm-12">
+							<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+						</div>
+
+					  </div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid"></div>
+	<div class="container-fluid"></div>
+	<div class="container-fluid footer">
+		<div class="container">
+			<div class="row">
+				<div class="colorft col-lg-3 col-md-6 col-sm-12">
+					<!-- <button type="button" class="btn btn-outline-secondary">LOGIC</button> -->
+					<div class="col-lg-8 col-md-8 col-sm-8">
+						<img class="picture" src="img/logo.png">
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+				<div class=" col-lg-3 col-md-6 col-sm-12">
+					<div class="row">
+		 				<div class="title col-lg-5 col-md-5 col-sm-5">
+							<h5 class="colorft">SITEMAP</h5>
+							<div class="progress height-progress">
+								<div class="progress-bar bg-warning " role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<p class="colorword">Services</p>
+					<p class="colorword">About Us</p>
+					<p class="colorword">Our Team</p>
+					<p class="colorword">Portfolio</p>
+				</div>
+				<div class=" col-lg-3 col-md-6 col-sm-12">
+					<div class="row">
+		 				<div class="title col-lg-5 col-md-5 col-sm-5">
+							<h5 class="colorft">ACHIVES</h5>
+							<div class="progress height-progress">
+								<div class="progress-bar bg-warning " role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<p class="colorword">January 2015</p>
+					<p class="colorword">February 2015</p>
+					<p class="colorword">March 2015</p>
+					<p class="colorword">April 2015</p>
+				</div>
+				<div class="colorft col-lg-3 col-md-6 col-sm-12">
+					<div class="row">
+		 				<div class="title col-lg-5 col-md-5 col-sm-5">
+							<h5>NEWSLETTER</h5>
+							<div class="progress height-progress">
+								<div class="progress-bar bg-warning " role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<p>Sign up for our mailing list to get latest updates and offers.</p>
+					<nav class="navbar navbar-light bg-light bgsearch">
+					  <form class="form-inline">
+					    <input class="form-control mr-sm-2 bgsearch" type="search" placeholder="Search" aria-label="Search">
+					  </form>
+					</nav>
+				</div>
+			</div>
+			<div class="row">
+				
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid" style="background: #131111;">
+		<div class="container">
+			<div class="row">
+				<div class="d-flex bd-highlight mb-3">
+				  <div class="p-2 bd-highlight">
+				  	<p>Make with by Bootstrap Themes</p>
+				  </div>
+				  <div class="p-2 bd-highlight">
+				  	<p>2016. All Rights Reserved</p>
+				  </div>
+				  <div class="ml-auto p-2 bd-highlight">
+				  	<span class="fa fa-facebook-official"></span>
+				  	<span></span>
+				  	<span></span>
+				  	<span></span>
+				  	<span></span>
+				  	<span></span>
+				  </div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<a class=" iconbtt"  id="backtotop" href="#menu" title=""><span class="fa fa-chevron-up"></span></a>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+	<script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+  	<script type="text/javascript" src="js/jquery.filterizr.min.js"></script>
+    <script src="js/final-project.js"></script>
+  	<script>
+		$(document).ready(function() {
+			$('.counter').counterUp({
+				delay: 10,
+				time: 1000
+			});
+		});
+		new WOW().init();
+		$(function() {
+	        var f = $('.filtr-container').filterizr({ controlsSelector: '.fltr-controls' });
+	        $('.color-container-1').filterizr({ controlsSelector: '.color-controls-1' });
+	        $('.color-container-2').filterizr({ controlsSelector: '.color-controls-2', layout: 'packed' });
+	        $('.color-container-3').filterizr({ controlsSelector: '.color-controls-3', layout: 'sameHeight' });
+	        // $('.color-container-4').filterizr({ controlsSelector: '.color-controls-4', layout: 'packed' });
+	        // $('.color-container-5').filterizr({ controlsSelector: '.color-controls-5', layout: 'horizontal' });
+	        // $('.color-container-6').filterizr({ controlsSelector: '.color-controls-6', layout: 'vertical' });
+	        window.filterizr = f;
+	    });
+		document.getElementById('backtotop').style.display = 'none';
+	 	window.addEventListener('scroll', function(){
+	 		if (window.scrollY > 200) {
+	 			document.getElementById('backtotop').style.display = 'block';
+	 		}
+	 		else
+	 			document.getElementById('backtotop').style.display = 'none';
+
+	 	})
+	</script>
+</body>
+</html>
