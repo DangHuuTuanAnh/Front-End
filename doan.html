@@ -35,7 +35,7 @@
 
 		  /* Set a specific height */
 		  height: 660px; 
-
+			
 		  /* Create the parallax scrolling effect */
 		  /*background-attachment: fixed;*/
 		  background-position: center;
@@ -54,7 +54,7 @@
 			background-color: #FF9800;
     		border-color: #FF9801; 
 		}
-		.carousel-indicators li{
+		.carousel-indicators .slide1{
 			width: 10px;
 			height: 10px;
 			transform: rotate(45deg);
@@ -64,9 +64,11 @@
 			background-color: #ff9800;
 		}
 		.icons{
+
 			font-size: 30px!important;
-			padding-bottom: 20px!important;
-			padding-top: 20px!important;
+			padding-bottom: 50px!important;
+			/*padding-top: 20px!important;*/
+			padding-left: 30px!important;
 		}
 		.icons1{
 			font-size: 30px!important;
@@ -92,14 +94,16 @@
 		.video{
 			position: relative;
 		}
-		.bgvideo{
+		
+		/*.bgvideo{
 			position: absolute;
-		}
+		}*/
 		.content-video{
 			text-align: center;
 			position: absolute;
-			left: 125px;
-    		top: 130px;
+			margin: 0 auto;
+    		top: 30%;
+    		left: 35%;
 		}
 		.percentage{
 			height: 0.5rem;
@@ -126,8 +130,8 @@
     		top: 130px;
 		}
 		.content{
-			/*text-align: center;*/
-			margin-top: 20px;
+			padding-top: 40px;
+			padding-bottom: 40px;
 		}
 		.card{
 			border: none;
@@ -288,30 +292,108 @@
 		}
 		.header{
 			position: relative;
-		}
-		.child-header{
-			position: absolute;
+			z-index: 1;
 		}
 		.fixed-top{
 	      background-color: #343a402b!important;
 	    }
+		.title-service{
+			padding-top: 12px;
+    		margin-left: 10px;
+		}
+		.bgicon{
+		  position: relative;
+		}
+		.icons2{
+		  	position: absolute;
+		    left: 26px;
+		    bottom: 11px;
+		    font-size: 2rem;
+		}
+		.img-fluidd{
+		  height: auto;
+		}
+		.ab-1{
+			position: absolute;
+			/*left: 32%;*/
+			top: 40%;
+		}
+		.ab-2{
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		.img-about{
+			position: relative;
+		}
+		/*.padd-1{
+			padding-right: 0;
+			width: 100%;
+		}*/
+		.img-like{
+		/* The image used */
+		background-image: url("img/testbg.jpg");
+
+		/* Full height */
+		height: 450px; 
+		/* Create the parallax scrolling effect */
+		/* background-attachment: fixed; */
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		filter: brightness(30%);
+		opacity: 0.9;
+		filter: alpha(opacity=50);
+	}
+	.posi{
+		position: relative;
+		padding-top: 5%;
+	}
+	.abs{c
+		position: absolute;
+		top: 25%;
+		left: 6%;
+	}
+	.posi .abs .carousel-inner p{
+		padding-top: 40px;
+	}
+	.mar-2{
+		margin-left: 0;
+		margin-right: 0;
+		padding: 0;
+	}
+	.black{
+		color: black;
+		background-color: white;
+	}
+	.ab-4{
+		position: absolute;
+		top: 33%;
+		left: 12%;
+	}
+	.padd-img{
+		padding-left: 0;
+		position: relative;
+	}
+	.padd-there{
+		position: absolute;
+		left: 15%;
+	}
 
 	</style>
 </head>
 <body>
-	<div class="header">
-		<div class="container-fluid">
-			 
-		</div>
+	<!-- <div></div> -->
+	<div class="container-fluid parallax" id="menu">
+		
 	</div>
-	<div class="container-fluid parallax">
-		<div class="container-fluid">
-				<div class="container child-header">
+	<div class="container-fluid ab-1">
+				<div class="container">
 					<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 					  <ol class="carousel-indicators">
-					    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-					    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-					    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+					    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="slide1 active"></li>
+					    <li data-target="#carouselExampleIndicators" class="slide1" data-slide-to="1"></li>
+					    <li data-target="#carouselExampleIndicators" class="slide1" data-slide-to="2"></li>
 					  </ol>
 					  <div class="carousel-inner">
 					    <div class="carousel-item active">
@@ -339,55 +421,70 @@
 					</div>
 				</div>
 			</div>
-	</div>
-	<div class="header">
-		<div class="container">
-			<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-			    <div class="mr-auto p-2 bd-highlight fonts">
-			        <img class="picture" src="img/logo.png">
-			    </div>
-			    <div class="p-2 bd-highlight">
-			        <ul>
-			            <li class="menutab colorword">HOME</li>
-			            <li class="menutab colorword">SERVICES</li>
-			            <li class="menutab colorword">TEAMS</li>
-			            <li class="menutab colorword">WORKS</li>
-			            <li class="menutab colorword">TESTIMONIAL</li>
-			            <li class="menutab colorword">CONTACT</li>
-			        </ul>
-			    </div>
-			    <div class="p-2 bd-highlight botton1">
-			        <span class="fa fa-search"></span>
-			    </div>
-			</nav>
-			
-		</div>
+	<div class="container-fluid ab-2">
+		<nav class="navbar navbar-expand-md">
+	  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+	    <div class="mr-auto p-2 bd-highlight fonts">
+	        <img class="picture" src="img/logo.png">
+	    </div>
+	    <div class="p-2 bd-highlight">
+	        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+	      	<span class="navbar-toggler-icon"></span>
+	    	</button>
+	    </div>
+	    <div class="collapse navbar-collapse" id="collapsibleNavbar"">
+	      <ul class="navbar-nav">
+	        <li class="nav-item tab">
+	          <a class="nav-link " href="#"><p class="colorword">HOME</p></a>
+	        </li>
+	        <li class="nav-item tab">
+	          <a class="nav-link " href="#wedesignone"><p class="colorword">SERVICES</p></a>
+	        </li>
+	        <li class="nav-item tab">
+	          <a class="nav-link " href="#featuredwork"><p class="colorword">TEAMS</p></a>
+	        </li>
+	        <li class="nav-item tab">
+	          <a class="nav-link " href="#aboutlogic"><p class="colorword">WORKS</p></a>
+	        </li>
+	         <li class="nav-item tab">
+	          <a class="nav-link" href="#therservice1"><p class="colorword">TESTIMONIAL</p></a>
+	        </li>
+	         <li class="nav-item tab">
+	          <a class="nav-link" href="#contact"><p class="colorword">CONTACT</p></a>
+	        </li>
+	          <li class="nav-item tab">
+	          <span class="fa fa-search colorword"></span>
+	        </li>
+	      </ul>
+	    </div>
+	  </nav>
+	</nav>
 	</div>
 	<div class="container-fluid">
 		<div class="container">
 			<div class="row">
-				<div class="card tab-icons col-lg-3 col-md-6 col-sm-12">
+				<div class="card tab-icons col-lg-3 col-md-6 col-sm-6">
 					<img class="card-img picture" src="img/stabmenubg.png">
 					<div class="card-img-overlay">
 						<span class="fa fa-map-marker icons"></span>
 						<p class="card-text">WEB DESIGN</p>
 					</div>
 				</div>
-				<div class="card tab-icons col-lg-3 col-md-6 col-sm-12">
+				<div class="card tab-icons col-lg-3 col-md-6 col-sm-6">
 					<img class="card-img picture" src="img/stabmenubg.png">
 					<div class="card-img-overlay">
 						<span class="fa fa-map-marker icons"></span>
 						<p class="card-text">APP DESIGN</p>
 					</div>
 				</div>
-				<div class="card tab-icons col-lg-3 col-md-6 col-sm-12">
+				<div class="card tab-icons col-lg-3 col-md-6 col-sm-6">
 					<img class="card-img picture" src="img/stabmenubg.png">
 					<div class="card-img-overlay">
 						<span class="fa fa-map-marker icons"></span>
 						<p class="card-text">GRAPHIC DESIGN</p>
 					</div>
 				</div>
-				<div class="card tab-icons col-lg-3 col-md-6 col-sm-12">
+				<div class="card tab-icons col-lg-3 col-md-6 col-sm-6">
 					<img class="card-img picture" src="img/stabmenubg.png">
 					<div class="card-img-overlay">
 					<span class="fa fa-map-marker icons"></span>
@@ -398,7 +495,7 @@
 		</div>
 	</div>
 	<div class="container-fluid">
-		<div class="container">
+		<div class="container content" id="wedesignone">
 			<div class="row">
 				<div class="left col-lg-7 col-md-7 col-sm-12">
 					<div class="row">
@@ -426,7 +523,7 @@
 		</div>
 	</div>
 	<div class="container-fluid">
-		<div class="container">
+		<div class="container content"  id="featuredwork">
 			<div class="row">
  				<div class="title col-lg-5 col-md-5 col-sm-5">
 					<h4>FEATURED WORK</h4>
@@ -438,11 +535,11 @@
 			<div class="row">
 				<div class="left col-lg-6 col-md-12 col-sm-12">
 					<!-- <div class="col-lg-6 col-md-12 col-sm-12"> -->
-						<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+						<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 						  <ol class="carousel-indicators">
-						    <li data-target="#carouselExampleIndicators " data-slide-to="0" class="active"></li>
-						    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-						    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+						    <li data-target="#carouselExampleControls " data-slide-to="0" class="active"></li>
+						    <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+						    <li data-target="#carouselExampleControls" data-slide-to="2"></li>
 						  </ol>
 						  <div class="carousel-inner">
 						    <div class="carousel-item active">
@@ -478,23 +575,23 @@
 	</div>
 	<!-- <div class="container-fluid video"> -->
 	<div class="video">
-		<!-- <div class="bgvideo"> -->
-			<img class="picture" src="img/videobg.jpg">
-		<!-- </div> -->
-		<div class="container content-video">
+		<img class="picture" src="img/videobg.jpg">
+		<!-- <center> -->
+		<div class=" content-video">
 			<div>
-				<img src="img/play.png">
+				<a href="https://youtu.be/K7VP-7s5nnA"><img src="img/play.png"></a>
 			</div>
 			<br>
 			<div>
 				<h3 class="colorword">WATCH OUR INTRO</h3>
 			</div>
 		</div>
+		<!-- </center> -->
 	</div>	
 		
 	<!-- </div> -->
-	<div class="container-fluid">
-		<div class="container">
+	<div class="container-fluid" id="aboutlogic">
+		<div class="container content">
 			<div class="row">
  				<div class="title col-lg-5 col-md-5 col-sm-5">
 					<h4>ABOUT LOGIC</h4>
@@ -513,7 +610,7 @@
 							</div>
 						</div>
 					</div> -->
-					<div class="row">
+					<!-- <div class="row">
 						<div class="row content col-lg-12 col-md-12 col-sm-12">
 							<div class="card col-lg-2 aboutlg">
 								<img class="card-img" src="img/iconbg2.png" >
@@ -550,8 +647,42 @@
 								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
 							</div>
 						</div>
+					</div> -->
+					<div class=" col-sm-12 col-lg-8 col-xl-8">
+						<div class="media">
+							<div class="img-about">
+								<img src="img/iconbg1.png" class="align-self-start mr-3" alt="...">
+								<i class="fa fa-coffee ab-1 fa-lg icons" aria-hidden="true"></i>
+							</div>
+							<div class="media-body">
+								<h5>RESPONSIVE DESIGN</h5>
+								<p>Lorem Ipsum is simply dummy text of the printing and industry. </p>
+								<p>Lorem Ipsum has been the industry's standard dummy text</p>
+							</div>
+						</div>
+						<div class="media padd-3">
+							<div class=" img-about">
+								<img src="img/iconbg1.png" class="align-self-start mr-3" alt="...">
+								<i class="fa fa-headphones ab-1 fa-lg icons" aria-hidden="true"></i>
+							</div>
+							<div class="media-body">
+								<h5>EASY TO CUSTOMIZE</h5>
+								<p>Lorem Ipsum is simply dummy text of the printing and industry. </p>
+								<p>Lorem Ipsum has been the industry's standard dummy text</p>
+							</div>
+						</div>
+						<div class="media padd-3">
+							<div class=" img-about">
+								<img src="img/iconbg1.png" class="align-self-start mr-3" alt="...">
+								<i class="fa fa-coffee ab-1 fa-lg  icons" aria-hidden="true"></i>
+							</div>
+							<div class="media-body gray">
+								<h5>LIFE TIME SUPPORT</h5>
+								<p>Lorem Ipsum is simply dummy text of the printing and industry. </p>
+								<p>Lorem Ipsum has been the industry's standard dummy text</p>
+							</div>
+						</div>
 					</div>
-					
 				</div>
 				<div class="right col-lg-5 col-md-12 col-sm-12">
 					<img class="picture" src="img/abright.png">
@@ -665,7 +796,7 @@
 	</div>
 <!-- 	<div class="container-fluid all-counter"> -->
 
-		<div class="bgpicture">
+		<div class="bgpicture content">
 			<img class="picture" src="img/counterbg.jpg">
 			<div class="container content-counter">
 				<div class="row A">
@@ -696,7 +827,7 @@
 
 	<!-- </div> -->
 	<div style="clear:both"></div>
-	<div class="container-fluid">
+	<div class="container-fluid" id="therservice1">
 		<div class="container">
 			<div class="row">
  				<div class="title col-lg-5 col-md-5 col-sm-5">
@@ -707,7 +838,7 @@
 				</div>
 			</div>
 			<div class="row content col-lg-12 col-md-12 col-sm-12">
-				<div class="row therservice col-lg-4 col-md-6 col-sm-12">
+				<div class="row therservice content col-lg-4 col-md-6 col-sm-12"">
 					<div class="row">
 						<div class="card">
 							<img class="card-img" src="img/info_iconbg.png" >
@@ -716,14 +847,14 @@
 							</div>
 						</div>
 						<div>
-							<h4>CREATIVE DESIGN</h4>
+							<h4 class="title-service">CREATIVE DESIGN</h4>
 						</div>
 					</div>
 					<div>
 						<p>CREATIVE DESIGNLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
 					</div>
 				</div>
-				<div class="row therservice col-lg-4 col-md-6 col-sm-12"">
+				<div class="row therservice content col-lg-4 col-md-6 col-sm-12"">
 					<div class="row">
 						<div class="card">
 							<img class="card-img" src="img/info_iconbg.png" >
@@ -732,14 +863,14 @@
 							</div>
 						</div>
 						<div>
-							<h4>CREATIVE DESIGN</h4>
+							<h4 class="title-service">CREATIVE DESIGN</h4>
 						</div>
 					</div>
 					<div>
 						<p>CREATIVE DESIGNLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
 					</div>
 				</div>
-				<div class="row therservice col-lg-4 col-md-6 col-sm-12"">
+				<div class="row therservice content col-lg-4 col-md-6 col-sm-12"">
 					<div class="row">
 						<div class="card">
 							<img class="card-img" src="img/info_iconbg.png" >
@@ -748,14 +879,14 @@
 							</div>
 						</div>
 						<div>
-							<h4>CREATIVE DESIGN</h4>
+							<h4 class="title-service">CREATIVE DESIGN</h4>
 						</div>
 					</div>
 					<div>
 						<p>CREATIVE DESIGNLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
 					</div>
 				</div>
-				<div class="row therservice col-lg-4 col-md-6 col-sm-12"">
+				<div class="row therservice content col-lg-4 col-md-6 col-sm-12"">
 					<div class="row">
 						<div class="card">
 							<img class="card-img" src="img/info_iconbg.png" >
@@ -764,14 +895,14 @@
 							</div>
 						</div>
 						<div>
-							<h4>CREATIVE DESIGN</h4>
+							<h4 class="title-service">CREATIVE DESIGN</h4>
 						</div>
 					</div>
 					<div>
 						<p>CREATIVE DESIGNLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
 					</div>
 				</div>
-				<div class="row therservice col-lg-4 col-md-6 col-sm-12"">
+				<div class="row therservice content col-lg-4 col-md-6 col-sm-12"">
 					<div class="row">
 						<div class="card">
 							<img class="card-img" src="img/info_iconbg.png" >
@@ -780,14 +911,14 @@
 							</div>
 						</div>
 						<div>
-							<h4>CREATIVE DESIGN</h4>
+							<h4 class="title-service">CREATIVE DESIGN</h4>
 						</div>
 					</div>
 					<div>
 						<p>CREATIVE DESIGNLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
 					</div>
 				</div>
-				<div class="row therservice col-lg-4 col-md-6 col-sm-12"">
+				<div class="row therservice content col-lg-4 col-md-6 col-sm-12"">
 					<div class="row">
 						<div class="card">
 							<img class="card-img" src="img/info_iconbg.png" >
@@ -796,7 +927,7 @@
 							</div>
 						</div>
 						<div>
-							<h4>CREATIVE DESIGN</h4>
+							<h4 class="title-service">CREATIVE DESIGN</h4>
 						</div>
 					</div>
 					<div>
@@ -806,8 +937,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="container-fluid">
-		<div class="container">
+	<div class="container-fluid" id="therservice2">
+		<div class="container content">
 			<div class="row">
  				<div class="title col-lg-5 col-md-5 col-sm-5">
 					<h4>THER SERVICES</h4>
@@ -818,23 +949,23 @@
 			</div>
 			<div class="row content">
 				<div class="col-lg-3 col-md-6 col-sm-12">
-					<img class="picture" src="img/team1.jpg">
+					<img class="picture wow bounceInRight" src="img/team1.jpg">
 				</div>
 				<div class="col-lg-3 col-md-6 col-sm-12">
-					<img class="picture" src="img/team2.jpg">
+					<img class="picture wow bounceInRight" src="img/team2.jpg">
 				</div>
 				<div class="col-lg-3 col-md-6 col-sm-12">
-					<img class="picture" src="img/team3.jpg">
+					<img class="picture wow bounceInRight" src="img/team3.jpg">
 				</div>
 				<div class="col-lg-3 col-md-6 col-sm-12">
-					<img class="picture" src="img/team4.jpg">
+					<img class="picture wow bounceInRight" src="img/team4.jpg">
 				</div>
 				
 			</div>
 		</div>
 	</div>
-	<div class="container-fluid">
-		<div class="container">
+	<div class="container-fluid" id="whychooseus">
+		<div class="container content">
 			<div class="row">
 				<div class="title col-lg-5 col-md-5 col-sm-5">
 				<h4>WHY CHOOSE US</h4>
@@ -853,91 +984,111 @@
 							</div>
 						</div>
 					</div> -->
-					<div class="row content">
-						<div class="accordion" id="accordionExample">
-						  <div class="card col-lg-12 col-md-12 col-sm-12">
-						    <div class="card-header" id="headingOne">
-						      <h2 class="mb-0">
-						        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-						          CREATE DESIGN
-						        </button>
-						      </h2>
-						    </div>
-
-						    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-						      <div class="card-body">
-						        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						      </div>
-						    </div>
-						  </div>
-						  <div class="card col-lg-12 col-md-12 col-sm-12">
-						    <div class="card-header" id="headingTwo">
-						      <h2 class="mb-0">
-						        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-						          RESPONSIVE DESIGN
-						        </button>
-						      </h2>
-						    </div>
-						    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-						      <div class="card-body">
-						       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						      </div>
-						    </div>
-						  </div>
-						  <div class="card col-lg-12 col-md-12 col-sm-12">
-						    <div class="card-header" id="headingThree">
-						      <h2 class="mb-0">
-						        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-						          RATINA READY
-						        </button>
-						      </h2>
-						    </div>
-						    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-						      <div class="card-body">
-						       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						      </div>
-						    </div>
-						  </div>
-						   <div class="card col-lg-12 col-md-12 col-sm-12">
-						    <div class="card-header" id="headingThree">
-						      <h2 class="mb-0">
-						        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-						          FREE GOOGLE FONT
-						        </button>
-						      </h2>
-						    </div>
-						    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-						      <div class="card-body">
-						       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						      </div>
-						    </div>
-						  </div>
-						   <div class="card col-lg-12 col-md-12 col-sm-12">
-						    <div class="card-header" id="headingThree">
-						      <h2 class="mb-0">
-						        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-						          1170 PX GRID BASE
-						        </button>
-						      </h2>
-						    </div>
-						    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-						      <div class="card-body">
-						       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						      </div>
-						    </div>
-						  </div>
+					<div class="card bg-light mb-3">
+							<div class="card-header row black mar-2 plus" id="tab1" onclick="tab1(this)">
+								<div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 padd-img">
+									<img src="img/ch_col_icn.png">
+									<i class="fa fa-bus fa-lg ab-4 gray-3" aria-hidden="true"></i>
+								</div>
+								<div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10">
+									<h5 class="mar-8 font-size-18 gray-3">GREAT DESIGN</h5>
+								</div>
+							</div>
+							<div class="card-body black" id="content-tab1">
+								<p class="gray rem-08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+						<div class="card bg-light mb-3">
+							<div class="card-header row black mar-2 plus" id="tab2" onclick="tab2(this)">
+								<div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 padd-img">
+									<img src="img/ch_col_icn.png" class="hover-img-1">
+									<i class="fa fa-bus fa-lg ab-4 gray-3" aria-hidden="true"></i>
+								</div>
+								<div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10">
+									<h5 class="mar-8 font-size-18 gray-3">RESPONSIVE DESIGN</h5>
+								</div>
+							</div>
+							<div class="card-body black" id="content-tab2" style="display: none;">
+								<p class="gray rem-08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+						<div class="card bg-light mb-3">
+							<div class="card-header row black mar-2 plus" id="tab3" onclick="tab3(this)">
+								<div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 padd-img">
+									<img src="img/ch_col_icn.png">
+									<i class="fa fa-bus fa-lg ab-4 gray-3" aria-hidden="true"></i>
+								</div>
+								<div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10">
+									<h5 class="mar-8 font-size-18 gray-3">RATINA READY</h5>
+								</div>
+							</div>
+							<div class="card-body black" id="content-tab3" style="display: none;">
+								<p class="gray rem-08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+						<div class="card bg-light mb-3">
+							<div class="card-header row black mar-2 plus" id="tab4" onclick="tab4(this)">
+								<div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 padd-img">
+									<img src="img/ch_col_icn.png">
+									<i class="fa fa-bus fa-lg ab-4 gray-3" aria-hidden="true"></i>
+								</div>
+								<div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10">
+									<h5 class="mar-8 font-size-18 gray-3">FREE GOOGLE FONT</h5>
+								</div>
+							</div>
+							<div class="card-body black" id="content-tab4" style="display: none;">
+								<p class="gray rem-08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+						<div class="card bg-light mb-3">
+							<div class="card-header row black mar-2 plus" id="tab5" onclick="tab5(this)">
+								<div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 padd-img">
+									<img src="img/ch_col_icn.png">
+									<i class="fa fa-bus fa-lg ab-4 gray-3" aria-hidden="true"></i>
+								</div>
+								<div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10">
+									<h5 class="mar-8 font-size-18 gray-3">1170 PX GRID BASE</h5>
+								</div>
+							</div>
+							<div class="card-body black" id="content-tab5" style="display: none;">
+								<p class="gray rem-08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
 						</div>
 					</div>
-				</div>
 				<div class="col-lg-6 col-md-6 col-sm-12">
-					<img class="picture" src="img/choose.png">
+					<img class="picture wow zoomIn" src="img/choose.png">
 				</div>
 			</div>
 			
 		</div>
 	</div>
-	<div class="container-fluid ">
-		<div class="container">
+	<div class="container-fluid " id="latest">
+		<div class="container content">
 			<div class="row">
 				<div class="mr-auto p-2 bd-highlight col-lg-4 col-md-4 col-sm-4">
 					<div class="title">
@@ -1036,8 +1187,79 @@
 		</div>
 		
 	</div>
+	<!-- <div class="container-fluid">
+		<img class="picture" src="img/testbg.jpg">
+		<div class="container ">
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+					    <div class="jumbotron content">
+							<h1 class="display-4 fonts">WELCOME TO OUT LOGIC</h1>
+							<p class="fonts">We Make Awesome Theme For Your Business</p>
+							<a class="btn btn-primary btn-lg" href="#" role="button">LEARN MORE</a>
+						</div>
+					</div>
+					<div class="carousel-item">
+					    <div class="jumbotron content">
+							<h1 class="display-4 fonts">WELCOME TO OUT LOGIC</h1>
+							<p class="fonts">We Make Awesome Theme For Your Business</p>
+							<a class="btn btn-primary btn-lg" href="#" role="button">LEARN MORE</a>
+						</div>
+					</div>
+					<div class="carousel-item">
+					    <div class="jumbotron content">
+							<h1 class="display-4 fonts">WELCOME TO OUT LOGIC</h1>
+							<p class="fonts">We Make Awesome Theme For Your Business</p>
+							<a class="btn btn-primary btn-lg" href="#" role="button">LEARN MORE</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div> -->
+	<div class="posi">
+			<div class="img-like">
+
+			</div>
+			<div class="container abs">
+				<div class="row">
+					<div class="col-lg-9 col-xl-9 padd-there">
+						<div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators carou">
+								<li data-target="#carouselExampleInterval" data-slide-to="0" class="first active"></li>
+								<li data-target="#carouselExampleInterval" data-slide-to="1" class="first"></li>
+								<li data-target="#carouselExampleInterval" data-slide-to="2" class="first"></li>
+							</ol>
+							<div class="carousel-inner white">
+								<div class="carousel-item active" data-interval="10000" align="center">
+									<i class="fa fa-quote-left fa-2x" aria-hidden="true"></i>
+									<p class="gray-4 rem-08">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+									<h6 class="gray-4">JANE GALADRIEL -- CEO TENGKUREP</h6>
+								</div>
+								<div class="carousel-item" data-interval="2000" align="center">
+									<i class="fa fa-quote-left fa-2x" aria-hidden="true"></i>
+									<p class="gray-4 rem-08">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+									<h6 class="gray-4">JANE GALADRIEL -- CEO TENGKUREP</h6>
+								</div>
+								<div class="carousel-item" align="center">
+									<i class="fa fa-quote-left fa-2x" aria-hidden="true"></i>
+									<p class="gray-4 rem-08">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+									<h6 class="gray-4">JANE GALADRIEL -- CEO TENGKUREP</h6>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	<div class="container-fluid logo">
-		<div class="container">
+		<div class="container content">
 			<div class="row">
 				<div class=" col-lg-2 col-md-4 col-sm-6">
 					<img class="picture" src="img/clogo1.png"> 
@@ -1061,8 +1283,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="container-fluid">
-		<div class="container">
+	<div class="container-fluid" id="contact">
+		<div class="container content">
 			<!-- <div class="row">
 				<div class="title col-lg-6 col-md-6 col-sm-6">
 					<h4>CONTACT INFO</h4>
@@ -1091,7 +1313,7 @@
 						<div class="card icons col-lg-2 col-md-2 col-sm-2">
 							<img class="card-img" src="img/iconbg2.png" >
 							<div class="card-img-overlay">
-								<span class="fa fa-coffee"></span>
+								<span class="fa fa-home"></span>
 							</div>
 						</div>
 						<div class="col-lg-10 col-md-10 col-sm-10">
@@ -1103,7 +1325,7 @@
 						<div class="card icons col-lg-2 col-md-2 col-sm-2">
 							<img class="card-img" src="img/iconbg2.png" >
 							<div class="card-img-overlay">
-								<span class="fa fa-coffee"></span>
+								<span class="fa fa-envelope-o"></span>
 							</div>
 						</div>
 						<div class="col-lg-10 col-md-10 col-sm-10">
@@ -1115,7 +1337,7 @@
 						<div class="card icons col-lg-2 col-md-2 col-sm-2">
 							<img class="card-img" src="img/iconbg2.png" >
 							<div class="card-img-overlay">
-								<span class="fa fa-coffee"></span>
+								<span class="fa fa-mobile"></span>
 							</div>
 						</div>
 						<div class="col-lg-10 col-md-10 col-sm-10">
@@ -1127,7 +1349,7 @@
 						<div class="card icons col-lg-2 col-md-2 col-sm-2">
 							<img class="card-img" src="img/iconbg2.png" >
 							<div class="card-img-overlay">
-								<span class="fa fa-coffee"></span>
+								<span class="fa fa-clock-o"></span>
 							</div>
 						</div>
 						<div class="col-lg-10 col-md-10 col-sm-10">
@@ -1148,21 +1370,30 @@
 					</div>
 					<form>
 					  <div class="row">
-					    <div class="col-lg-6 col-md-6 col-sm-12">
-					      <input type="text" class="form-control" placeholder="First name">
+					  	<div class="row col-lg-12 col-md-12 col-sm-12">
+					  		<div class="col-lg-6 col-md-6 col-sm-12">
+						      <input type="text" class="form-control" placeholder="First name">
+						    </div>
+						    <div class="col-lg-6 col-md-6 col-sm-12">
+						      <input type="text" class="form-control" placeholder="Last name">
+						    </div>
+					  	</div>
+					  	<br>
+					    <div class="row col-lg-12 col-md-12 col-sm-12">
+					    	<div class="col-lg-6 col-md-6 col-sm-12">
+						      <input type="email" class="form-control" placeholder="Email">
+						    </div>
+						     <div class="col-lg-6 col-md-6 col-sm-12">
+						      <input type="text" class="form-control" placeholder="Subject">
+						    </div>
 					    </div>
-					    <div class="col-lg-6 col-md-6 col-sm-12">
-					      <input type="text" class="form-control" placeholder="Last name">
+					    <br>
+					    <div class="row col-lg-12 col-md-12 col-sm-12">
+					    	<div class="col-lg-12 col-md-12 col-sm-12">
+								<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+							</div>
 					    </div>
-					    <div class="col-lg-6 col-md-6 col-sm-12">
-					      <input type="email" class="form-control" placeholder="Email">
-					    </div>
-					     <div class="col-lg-6 col-md-6 col-sm-12">
-					      <input type="text" class="form-control" placeholder="Subject">
-					    </div>
-						<div class="col-lg-12 col-md-12 col-sm-12">
-							<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-						</div>
+						
 
 					  </div>
 					</form>
@@ -1171,9 +1402,11 @@
 		</div>
 	</div>
 	<div class="container-fluid"></div>
-	<div class="container-fluid"></div>
-	<div class="container-fluid footer">
-		<div class="container">
+	<div class="container-fluid">
+			<iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.930511960577!2d105.87184701437772!3d20.99542239429268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac02e9347e15%3A0x9c7a2d9f8c11320a!2zMTczIETGsMahbmcgVsSDbiBCw6ksIEhhaSBCw6AgVHLGsG5nLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1547371581399" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
+	<div class="container-fluid footer" id="end">
+		<div class="container content">
 			<div class="row">
 				<div class="colorft col-lg-3 col-md-6 col-sm-12">
 					<!-- <button type="button" class="btn btn-outline-secondary">LOGIC</button> -->
@@ -1191,7 +1424,6 @@
 							</div>
 						</div>
 					</div>
-					<hr>
 					<p class="colorword">Services</p>
 					<p class="colorword">About Us</p>
 					<p class="colorword">Our Team</p>
@@ -1206,7 +1438,6 @@
 							</div>
 						</div>
 					</div>
-					<hr>
 					<p class="colorword">January 2015</p>
 					<p class="colorword">February 2015</p>
 					<p class="colorword">March 2015</p>
@@ -1221,7 +1452,6 @@
 							</div>
 						</div>
 					</div>
-					<hr>
 					<p>Sign up for our mailing list to get latest updates and offers.</p>
 					<nav class="navbar navbar-light bg-light bgsearch">
 					  <form class="form-inline">
@@ -1265,6 +1495,44 @@
   	<script type="text/javascript" src="js/jquery.filterizr.min.js"></script>
     <script src="js/final-project.js"></script>
   	<script>
+  		$(function(){
+				$(".plus").click(function(){
+					$(this).parent().children().next().toggle(200);
+				});
+			});
+			function tab1(obj) {
+				document.getElementById('content-tab2').style.display="none";
+				document.getElementById('content-tab3').style.display="none";
+				document.getElementById('content-tab4').style.display="none";
+				document.getElementById('content-tab5').style.display="none";
+			}
+			function tab2(obj) {
+				document.getElementById('content-tab1').style.display="none";
+				document.getElementById('content-tab3').style.display="none";
+				document.getElementById('content-tab4').style.display="none";
+				document.getElementById('content-tab5').style.display="none";
+			}
+
+			function tab3(obj) {
+				document.getElementById('content-tab1').style.display="none";
+				document.getElementById('content-tab2').style.display="none";
+				document.getElementById('content-tab4').style.display="none";
+				document.getElementById('content-tab5').style.display="none";
+			}
+
+			function tab4(obj) {
+				document.getElementById('content-tab1').style.display="none";
+				document.getElementById('content-tab2').style.display="none";
+				document.getElementById('content-tab3').style.display="none";
+				document.getElementById('content-tab5').style.display="none";
+			}
+
+			function tab5(obj) {
+				document.getElementById('content-tab1').style.display="none";
+				document.getElementById('content-tab2').style.display="none";
+				document.getElementById('content-tab3').style.display="none";
+				document.getElementById('content-tab4').style.display="none";
+			}
 		$(document).ready(function() {
 			$('.counter').counterUp({
 				delay: 10,
@@ -1284,7 +1552,7 @@
 	    });
 		document.getElementById('backtotop').style.display = 'none';
 	 	window.addEventListener('scroll', function(){
-	 		if (window.scrollY > 200) {
+	 		if (window.scrollY > 300) {
 	 			document.getElementById('backtotop').style.display = 'block';
 	 		}
 	 		else
